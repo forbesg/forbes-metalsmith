@@ -1,8 +1,18 @@
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    {{#each collections.pages}}
-    <li><a href="/{{this.path}}">{{this.title}}</a></li>
-    {{/each}}
-  </ul>
-</nav>
+<div class="">
+  <div class="logo col-md-4 text-center">
+    <img src="/images/logo.png" alt="Logo" />
+  </div>
+  <div class="nav-toggle">
+    <i class="glyphicon glyphicon-menu-hamburger"></i>
+  </div>
+  <div class="col-md-8">
+    <nav class="main-nav">
+      <ul class="">
+        <li><a href="/">Home</a></li>
+        {{#each collections.pages}}
+        <li><a href="/{{this.path}}">{{this.title}}</a></li>
+        {{/each}}
+      </ul>
+    </nav>
+  </div>
+</div>
