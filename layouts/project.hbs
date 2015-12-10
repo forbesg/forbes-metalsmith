@@ -30,14 +30,14 @@
       </div>
       <div class="col-md-4">
         <img src="{{image}}" alt="{{title}} Screenshot" class="img-responsive" />
-        <div class="col-xs-12 text-center">
-          <a href="{{url}}" target="_blank"><button class="button">View Project</button></a>
-        </div>
         <div class="tags text-right">
           <h4>Technologies Used</h4>
           {{#each features}}
             <h6>{{this}}</h6>
           {{/each}}
+        </div>
+        <div class="text-right">
+          <a href="{{url}}" target="_blank"><button class="button">View  <i class="fa fa-external-link"></i></button></a>
         </div>
       </div>
     </div>

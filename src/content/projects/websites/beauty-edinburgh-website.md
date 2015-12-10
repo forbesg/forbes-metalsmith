@@ -1,6 +1,6 @@
 ---
 title: Beauty Edinburgh Website
-image: /images/projects/BeautyEdinburgh.jpg
+image: /images/projects/web/BeautyEdinburgh.jpg
 url: http://www.beautyedinburgh.co.uk
 layout: project.hbs
 features: [html, css, php, javascript, bootstrap, online booking, responsive design]
@@ -9,7 +9,7 @@ features: [html, css, php, javascript, bootstrap, online booking, responsive des
 The Beauty Edinburgh Website is a something that has evolved over time.
 
 In its infancy, the site was created using the very limited Google Sites platform.
-This of course is product which has its uses however building a modern customer
+This of course is a product which has its uses however building a modern customer
 facing image is not one.
 
 After the frustrations of trying to 'personalise' the Google Site, the project

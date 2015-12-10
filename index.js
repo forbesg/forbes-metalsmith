@@ -12,6 +12,8 @@ var Metalsmith = require('metalsmith'),
 Handlebars.registerPartial({
   'head': fs.readFileSync('./layouts/partials/head.hbs').toString(),
   'header': fs.readFileSync('./layouts/partials/header.hbs').toString(),
+  'projects': fs.readFileSync('./layouts/partials/projects.hbs').toString(),
+  'contact': fs.readFileSync('./layouts/partials/contact.hbs').toString(),
   'footer': fs.readFileSync('./layouts/partials/footer.hbs').toString()
 });
 Handlebars.registerHelper('toLowerCase', function(str) {
@@ -29,7 +31,10 @@ var metalsmith = new Metalsmith(__dirname)
           pattern: 'content/projects/websites/*.md'
         },
         blackberry: {
-          patter: 'content/projects/blackberry/*.md'
+          pattern: 'content/projects/blackberry/*.md'
+        },
+        webapps: {
+          pattern: 'content/projects/webapps/*.md'
         }
     }))
     .use(markdown())
