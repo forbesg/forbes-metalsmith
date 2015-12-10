@@ -10,8 +10,8 @@ var Metalsmith = require('metalsmith'),
     fs = require('fs');
 
 Handlebars.registerPartial({
-  'head': fs.readFileSync('./layouts/partials/header.hbs').toString(),
-  'header': fs.readFileSync('./layouts/partials/nav.hbs').toString(),
+  'head': fs.readFileSync('./layouts/partials/head.hbs').toString(),
+  'header': fs.readFileSync('./layouts/partials/header.hbs').toString(),
   'footer': fs.readFileSync('./layouts/partials/footer.hbs').toString()
 });
 Handlebars.registerHelper('toLowerCase', function(str) {
