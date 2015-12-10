@@ -1,7 +1,7 @@
 <div class="">
   <div class="logo col-md-4 text-center">
-    <a href="{{rootPath}}">
-      <img src="{{rootPath}}images/logo.png" alt="Logo" />
+    <a href="/">
+      <img src="/images/logo.png" alt="Logo" />
     </a>
   </div>
   <div class="nav-toggle">
@@ -12,9 +12,9 @@
     <div class="nav-container">
       <nav class="main-nav">
         <ul class="">
-          <li><a href="{{rootPath}}">Home</a></li>
+          <li><a href="/">Home</a></li>
           {{#each collections.pages}}
-          <li><a href="{{rootPath}}{{this.path}}">{{this.title}}</a></li>
+          <li><a href="/{{this.path}}">{{this.title}}</a></li>
           {{/each}}
         </ul>
       </nav>

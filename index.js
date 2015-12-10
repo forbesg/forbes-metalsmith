@@ -1,5 +1,4 @@
 var Metalsmith = require('metalsmith'),
-    rootpath = require('metalsmith-rootpath'),
     markdown = require('metalsmith-markdown'),
     permalinks = require('metalsmith-permalinks'),
     layouts = require('metalsmith-layouts'),
@@ -24,7 +23,6 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 var metalsmith = new Metalsmith(__dirname)
     .source('./src')
     .destination('./build')
-    .use(rootpath())
     .use(collections({
         pages: {
           pattern: 'content/pages/*.md'

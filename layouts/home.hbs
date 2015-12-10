@@ -32,16 +32,16 @@
         <div class="project col-md-4 ">
           <div class="project-container">
             <div class="image-block">
-              <a href="{{rootPath}}{{this.url}}" target="_blank">
+              <a href="{{this.url}}" target="_blank">
                 <figure>
-                  <img src="{{rootPath}}{{this.image}}" alt="{{this.title}} Image" />
+                  <img src="{{this.image}}" alt="{{this.title}} Image" />
                 </figure>
               </a>
             </div>
             <div class="overlay-block">
               <div class="text-block">
                 <h4>{{this.title}}</h4>
-                <a href="{{rootPath}}{{this.path}}">
+                <a href="/{{this.path}}">
                   <button type="button" name="button">View Project</button>
                 </a>
               </div>
@@ -50,7 +50,7 @@
         </div>
         {{/each}}
         <div class="text-center">
-          <a href="{{rootPath}}portfolio">
+          <a href="/portfolio">
             <button type="button" name="button">View more Projects</button>
           </a>
         </div>

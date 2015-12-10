@@ -3,9 +3,9 @@
     <div class="container text-center">
       <nav>
         <ul>
-          <li><a href="{{rootPath}}">Home</a></li>
+          <li><a href="/">Home</a></li>
           {{#each collections.pages}}
-          <li><a href="{{rootPath}}{{this.path}}">{{this.title}}</a></li>
+          <li><a href="/{{this.path}}">{{this.title}}</a></li>
           {{/each}}
         </ul>
       </nav>
@@ -21,6 +21,6 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="{{rootPath}}js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

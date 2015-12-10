@@ -1,6 +1,6 @@
 ---
 title: Beauty Edinburgh Website
-image: images/projects/web/BeautyEdinburgh.jpg
+image: /images/projects/web/BeautyEdinburgh.jpg
 url: http://www.beautyedinburgh.co.uk
 layout: project.hbs
 features: [html, css, php, javascript, bootstrap, online booking, responsive design]
