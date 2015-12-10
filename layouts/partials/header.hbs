@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head lang="en">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Forbes Gray | {{ title }}</title>
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css" media="screen" title="no title" charset="utf-8"> -->
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
+<div class="">
+  <div class="logo col-md-4 text-center">
+    <img src="/images/logo.png" alt="Logo" />
+  </div>
+  <div class="nav-toggle">
+    <i class="glyphicon glyphicon-menu-hamburger"></i>
+  </div>
+  <div class="col-md-8">
+    <nav class="main-nav">
+      <ul class="">
+        <li><a href="/">Home</a></li>
+        {{#each collections.pages}}
+        <li><a href="/{{this.path}}">{{this.title}}</a></li>
+        {{/each}}
+      </ul>
+    </nav>
+  </div>
+</div>
