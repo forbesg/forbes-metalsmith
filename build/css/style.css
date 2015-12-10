@@ -3,39 +3,44 @@ body {
   color: #414141;
 }
 h1, h2, h3, h4 {
-    /*color: #fff;*/
-    color: #2b3e50;
-    font-weight: lighter;
-    /*text-shadow: 1px 1px 0px #000;*/
-    text-transform: lowercase;
-    margin: 30px 0;
-    font-family: 'Quattrocento', serif;
+  /*color: #fff;*/
+  color: #2b3e50;
+  font-weight: lighter;
+  /*text-shadow: 1px 1px 0px #000;*/
+  text-transform: lowercase;
+  margin: 30px 0;
+  font-family: 'Quattrocento', serif;
 }
-p{
+p {
   color: #414141;
   line-height: 28px;
   margin: 0 0 30px;
 }
+a:hover, a:focus {
+  color: #E2E2E2;
+  text-decoration: underline;
+}
 hr {
-    margin-top: 21px;
-    margin-bottom: 21px;
-    border: 0;
-    border-top: 1px solid #EAEAEA;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  border: 0;
+  border-top: 1px solid #EAEAEA;
 }
 button {
-    background-color: transparent;
-    border: 1px solid #2b3e50;
-    padding: 5px 10px;
-    color: #2b3e50;
-    transition: all 0.3s ease-in;
+  background-color: transparent;
+  border: 1px solid #2b3e50;
+  margin: 20px;
+  padding: 5px 10px;
+  color: #2b3e50;
+  transition: all 0.3s ease-in;
 }
 button:hover {
-    background-color: #2b3e50;
-    color:#fff;
-    transition: all 0.3s ease-in;
+  background-color: #2b3e50;
+  color: #fff;
+  transition: all 0.3s ease-in;
 }
 .banner-text {
-  padding: 120px 0;
+  padding: 150px 0;
   text-align: end;
 }
 h1.title {
@@ -60,8 +65,8 @@ h1.title {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #fff;
   font-size: 30px;
+  color: #fff;
   padding: 5px 10px;
   display: block;
   cursor: pointer;
@@ -70,6 +75,9 @@ h1.title {
 .nav-toggle:hover {
   color: #D5D5D5;
   text-shadow: 1px 1px 0 #585858;
+}
+.nav-toggle i {
+  transition: all 0.3s ease;
 }
 header nav {
   display: none;
@@ -82,34 +90,45 @@ header nav {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
   background: rgba(0, 0, 0, 0.85);
+}
+a:hover, a:focus {
+  color: #E2E2E2;
+  text-decoration: underline;
 }
 header nav ul {
   padding-left: 0;
   line-height: 50px;
   margin-bottom: 0;
+  height: 100%;
 }
 header nav ul li {
   display: block;
+  height: 20%;
 }
 header nav ul li a {
   color: #FFF;
   font-size: 16px;
   text-transform: uppercase;
   display: block;
-  padding: 20px;
+  padding: 10px;
   text-shadow: 1px 1px 0 #000;
 }
 header nav ul li a:hover {
   color: #E2E2E2;
   text-decoration: none;
 }
-.logo > img {
+.logo img {
   height: 50px;
-  margin:20px;
+  margin: 20px;
+}
+.logo img:hover {
+  background-color: #2b3e50;
+  transition: all 0.3s ease-in;
 }
 .banner {
+  background-color: #2b3e50;
   background-image: url(../images/background.jpg);
   height: 600px;
   background-position: center;
@@ -177,10 +196,10 @@ header nav ul li a:hover {
   border: 1px solid #fff;
 }
 .overlay-block button:hover {
-    background-color: #2b3e50;
-    color:#fff;
-    border: 1px solid #2b3e50;
-    transition: all 0.3s ease-in;
+  background-color: #2b3e50;
+  color: #fff;
+  border: 1px solid #2b3e50;
+  transition: all 0.3s ease-in;
 }
 .text-block {
   color: #E2E2E2;
@@ -189,7 +208,6 @@ header nav ul li a:hover {
   margin-bottom: 15px;
   margin-top: 0;
 }
-
 .card {
   padding: 20px;
 }
@@ -202,41 +220,54 @@ header nav ul li a:hover {
 .form-control {
   border: none;
   -webkit-box-shadow: none;
-  border-bottom : 1px solid #2b3e50;
+  border-bottom: 1px solid #2b3e50;
 }
-
 footer {
   background-color: #2b3e50;
   color: #000;
+  margin-top: 50px;
   padding: 20px 0;
-}font-size: 12px;
-footer nav ul {
-    padding-left: 0;
-    margin: 20px;
+}
+footer ul {
+  padding-left: 0;
+  margin: 20px;
 }
 footer nav li {
-    color: #000;
-    display: inline-block;
+  color: #000;
+  display: inline-block;
 }
 footer nav li a {
-    padding: 5px 10px;
-    display: inline-block;
-    text-transform: uppercase;
-    /*color: #2B3E50;*/
-    color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
 }
 footer nav li a:hover {
   color: #E2E2E2;
   text-decoration: none;
+}
+.social {
+  padding: 30px;
+}
+footer a i.fa {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 20px;
+}
+footer a i.fa:hover {
+  color: #FFF670;
 }
 p.copy {
   color: #dadada;
   font-size: 12px;
 }
 
-
 /*** Media Queries ***/
+
+
 /* Small devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
   h1.title {
     font-size: 34px;
@@ -244,13 +275,17 @@ p.copy {
   .banner-text p {
     font-size: 16px;
   }
+  footer nav li a {
+    font-size: 16px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
   header nav {
     display: block;
-    float:right;
+    float: right;
     position: relative;
     width: auto;
     height: auto;
@@ -283,4 +318,7 @@ p.copy {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+
+@media (min-width: 1200px) {
+  ...
+}

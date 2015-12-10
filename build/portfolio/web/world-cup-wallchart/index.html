@@ -7,6 +7,7 @@
     <title>Forbes Gray | World Cup Wallchart</title>
     <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css" media="screen" title="no title" charset="utf-8"> -->
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -19,26 +20,31 @@
 
         <div class="">
           <div class="logo col-md-4 text-center">
-            <img src="/images/logo.png" alt="Logo" />
+            <a href="/">
+              <img src="/images/logo.png" alt="Logo" />
+            </a>
           </div>
           <div class="nav-toggle">
-            <i class="glyphicon glyphicon-menu-hamburger"></i>
+            <i class="fa fa-bars"></i>
+            <!-- <i class="glyphicon glyphicon-menu-hamburger"></i> -->
           </div>
           <div class="col-md-8">
-            <nav class="main-nav">
-              <ul class="">
-                <li><a href="/">Home</a></li>
-                <li><a href="/./about">About</a></li>
-                <li><a href="/./contact">Contact</a></li>
-                <li><a href="/./portfolio">Portfolio</a></li>
-              </ul>
-            </nav>
+            <div class="nav-container">
+              <nav class="main-nav">
+                <ul class="">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/./about">About</a></li>
+                  <li><a href="/./contact">Contact</a></li>
+                  <li><a href="/./portfolio">Portfolio</a></li>
+                </ul>
+              </nav>
+          </div>
           </div>
         </div>
 
       </div>
     </header>
-    <div class="container">
+    <div class="">
       <div class="banner-text">
         <h1 class="title">World Cup Wallchart</h1>
         <p >
@@ -48,19 +54,27 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <h2>World Cup Wallchart</h2>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <img src="/images/projects/WorldCupWallChart.jpg" alt="World Cup Wallchart Screenshot" class="img-responsive" />
+<div class="container project-page">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="title">
+      <h2>World Cup Wallchart</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h3 id="interactive-world-cup-wall-chart">Interactive World Cup Wall Chart</h3>
+
+      </div>
+      <div class="col-md-4">
+        <img src="/images/projects/WorldCupWallChart.jpg" alt="World Cup Wallchart Screenshot" class="img-responsive" />
+        <div class="col-xs-12 text-center">
+          <a href="http://www.googledrive.com/host/0B4KywVOD2mG0YUdFVi1tS3BZM2M" target="_blank"><button class="button">View Project</button></a>
+        </div>
+        <div class="tags text-right">
+          <h4>Technologies Used</h4>
+        </div>
+      </div>
     </div>
   </div>
-
-
-    <h3 id="interactive-world-cup-wall-chart">Interactive World Cup Wall Chart</h3>
-
 </div>
 
   <footer>
@@ -73,6 +87,12 @@
           <li><a href="/./portfolio">Portfolio</a></li>
         </ul>
       </nav>
+      <div class="social">
+        <a href="#" title="Github"><i class="fa fa-github"></i></a>
+        <a href="#" title="Github"><i class="fa fa-google-plus"></i></a>
+        <a href="#" title="Github"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="Github"><i class="fa fa-instagram"></i></a>
+      </div>
       <p class="copy">
         &copy; 2015 FNBG
       </p>

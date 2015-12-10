@@ -9,7 +9,7 @@
 
       </div>
     </header>
-    <div class="container">
+    <div class="">
       <div class="banner-text">
         <h1 class="title">{{title}}</h1>
         <p >
@@ -19,17 +19,28 @@
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <h2>{{title}}</h2>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <img src="{{image}}" alt="{{title}} Screenshot" class="img-responsive" />
+<div class="container project-page">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="title">
+      <h2>{{title}}</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        {{{ contents }}}
+      </div>
+      <div class="col-md-4">
+        <img src="{{image}}" alt="{{title}} Screenshot" class="img-responsive" />
+        <div class="col-xs-12 text-center">
+          <a href="{{url}}" target="_blank"><button class="button">View Project</button></a>
+        </div>
+        <div class="tags text-right">
+          <h4>Technologies Used</h4>
+          {{#each features}}
+            <h6>{{this}}</h6>
+          {{/each}}
+        </div>
+      </div>
     </div>
   </div>
-
-
-    {{{ contents }}}
 </div>
 {{> footer}}

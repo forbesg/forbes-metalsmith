@@ -5,16 +5,19 @@
     </a>
   </div>
   <div class="nav-toggle">
-    <i class="glyphicon glyphicon-menu-hamburger"></i>
+    <i class="fa fa-bars"></i>
+    <!-- <i class="glyphicon glyphicon-menu-hamburger"></i> -->
   </div>
   <div class="col-md-8">
-    <nav class="main-nav">
-      <ul class="">
-        <li><a href="/">Home</a></li>
-        {{#each collections.pages}}
-        <li><a href="/{{this.path}}">{{this.title}}</a></li>
-        {{/each}}
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <nav class="main-nav">
+        <ul class="">
+          <li><a href="/">Home</a></li>
+          {{#each collections.pages}}
+          <li><a href="/{{this.path}}">{{this.title}}</a></li>
+          {{/each}}
+        </ul>
+      </nav>
+  </div>
   </div>
 </div>

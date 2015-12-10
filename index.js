@@ -47,7 +47,8 @@ var metalsmith = new Metalsmith(__dirname)
       engine: 'handlebars',
     }))
     .use(serve({
-      port: 3000
+      port: 3000,
+      host: '0.0.0.0'
     }))
     // .use(watch({
     //   paths: {

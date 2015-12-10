@@ -9,7 +9,7 @@
 
       </div>
     </header>
-    <div class="container">
+    <div class="">
       <div class="banner-text">
         <h1 class="title">{{title}}</h1>
         <p >
@@ -24,21 +24,23 @@
 
   <!-- Portfolio Page -->
   {{#if portfolio}}
-  <div class="web row">
+  <div class="web">
     <h2>Web Projects</h2>
-    {{#each collections.web}}
-    <div class="col-md-6">
-      <div class="card">
-        <h4>{{this.title}}</h4>
-        <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
-        <div class="text-center">
-          <a href="/{{this.path}}">
-            <button type="button" name="button">View Project</button>
-          </a>
+    <div class="row">
+      {{#each collections.web}}
+      <div class="col-md-4">
+        <div class="card row">
+          <h4>{{this.title}}</h4>
+          <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
+          <div class="text-center">
+            <a href="/{{this.path}}">
+              <button type="button" name="button">View Project</button>
+            </a>
+          </div>
         </div>
       </div>
+      {{/each}}
     </div>
-    {{/each}}
   </div>
   <div class="blackberry row">
     <h2>BlackBerry Projects</h2>
