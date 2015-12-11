@@ -21,19 +21,21 @@
 </div>
 <div class="container">
   <div class="col-md-8 col-md-offset-2">
-  {{{ contents }}}
-
   <!-- Portfolio Page -->
   {{#if portfolio}}
     {{> projects}}
+    {{else}}
+    <!-- Contact Page -->
+    {{#if contact}}
+      {{> contact}}
+      {{else}}
+      {{{contents}}}
+    {{/if}}
+    <!-- End Contact Page -->
   {{/if}}
   <!-- End Portfolio Page -->
 
-  <!-- Contact Page -->
-  {{#if contact}}
-      {{> contact}}
-  {{/if}}
-  <!-- End Contact Page -->
+
   </div>
 </div>
 
