@@ -25,7 +25,8 @@ var metalsmith = new Metalsmith(__dirname)
     .use(markdown())
     .use(collections({
         pages: {
-          pattern: 'pages/*.html'
+          pattern: 'pages/*.html',
+          sortBy: 'order'
         },
         web: {
           pattern: 'projects/websites/*.html'

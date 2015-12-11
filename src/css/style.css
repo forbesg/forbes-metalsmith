@@ -216,6 +216,12 @@ header nav ul li a:hover {
   border: 1px solid #EEE;
 }
 
+.google-card {
+  width: 250px;
+  padding: 20px;
+  margin: auto;
+}
+
 /*** Contact Form Styling ***/
 .form-control {
   border: none;

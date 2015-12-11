@@ -1,6 +1,6 @@
 <h2>Contact</h2>
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-0">
     {{{contents}}}
     <div class="social-contacts">
       <div class="social-links">
@@ -17,7 +17,13 @@
       </div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-0">
+    <div class="row">
+        <div class="google-card text-center">
+          <img src="/images/me.jpg" class="img-circle" alt="Forbes Gray" />
+        </div>
+    </div>
+
     <div class="form-container row">
       <h4>Send me a quick message...</h4>
       <form action="//formspree.io/fnbg75@gmail.com" method="POST" class="form-horizontal">
@@ -46,6 +52,7 @@
               <textarea class="form-control" id="message" name="_message" required></textarea>
             </div>
           </div>
+          <input type="hidden" name="_next" value="contact" />
           <input type="text" name="_gotcha" style="display:none" />
           <input type="submit" class="button pull-right" value="Send" />
       </fieldset>

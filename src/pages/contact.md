@@ -2,6 +2,7 @@
 title: Contact
 layout: page.hbs
 contact: true
+order: 5
 ---
 
 #### Contact Information
