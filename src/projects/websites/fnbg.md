@@ -6,7 +6,7 @@ layout: project.hbs
 features: [html, css, php, javascript, bootstrap, responsive design, ajax]
 ---
 
-This is a website for my Business, [FNBG Business Cost Consultants](http://fnbg.co.uk), and was what
+This is a website for my Business, <a href="http://fnbg.co.uk" target="_blank">FNBG Business Cost Consultants</a>, and was what
 led me to my interest in web development.
 
 As part of starting the business there are all sorts of things that you need to

@@ -1,5 +1,4 @@
 var Metalsmith = require('metalsmith'),
-    metadata = require('metalsmith-metadata'),
     markdown = require('metalsmith-markdown'),
     permalinks = require('metalsmith-permalinks'),
     layouts = require('metalsmith-layouts'),
@@ -23,9 +22,6 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 
 var metalsmith = new Metalsmith(__dirname)
     .source('src')
-    // .use(metadata({
-    //   rootpath: 'http://localhost:3000'
-    // }))
     .use(markdown())
     .use(collections({
         pages: {
@@ -54,7 +50,6 @@ var metalsmith = new Metalsmith(__dirname)
     .use(layouts({
       engine: 'handlebars',
     }))
-    .use(pathname)
     .destination('build')
     .use(serve({
       port: 3000,
@@ -70,12 +65,3 @@ var metalsmith = new Metalsmith(__dirname)
     .build(function (err) {
       if (err) console.log(err);
     });
-
-
-    function pathname (files, metalsmith, done) {
-      console.log(collections.pages);
-      for (var file in files) {
-        console.log(files[file].title + " | " + files[file].path);
-      }
-      done();
-    }
