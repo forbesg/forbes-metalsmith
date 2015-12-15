@@ -9,6 +9,8 @@ var Metalsmith = require('metalsmith'),
     Handlebars = require('handlebars'),
     uglify = require('metalsmith-uglify'),
     cleanCss = require('metalsmith-clean-css'),
+    concat = require('metalsmith-concat'),
+    compress = require('metalsmith-gzip'),
     fs = require('fs');
 
 Handlebars.registerPartial({
@@ -24,6 +26,10 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 
 var metalsmith = new Metalsmith(__dirname)
     .source('src')
+    .use(concat({
+      files: 'css/**/*.css',
+      output: 'css/style.css'
+    }))
     .use(cleanCss())
     .use(uglify())
     .use(markdown())
@@ -55,6 +61,7 @@ var metalsmith = new Metalsmith(__dirname)
     .use(layouts({
       engine: 'handlebars',
     }))
+    .use(compress())
     .destination('build')
     .use(serve({
       port: 3000,

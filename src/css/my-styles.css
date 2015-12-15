@@ -271,9 +271,12 @@ footer a i.fa {
   color: #fff;
   font-size: 20px;
   margin: 0 20px;
+  transition: all 0.2s ease;
 }
 footer a i.fa:hover {
-  color: #FFF670;
+  color: #000;
+  transform: scale(1.2);
+  transition: all 0.2s ease;
 }
 p.copy {
   color: #dadada;
