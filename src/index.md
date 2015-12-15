@@ -6,8 +6,14 @@ layout: home.hbs
 profile: images/forbes-profile.jpg
 ---
 
-### A little about me...
+## Welcome to Forbes' slice of the web...
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am a freelance Website Developer from beautiful Edinburgh in, sometimes, sunny Scotland.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I build small, fast and maintainable business websites for the good folk of Scotland and beyond, as well as
+developing more complex web and mobile applications in my spare time.
+
+You can view some of my previous projects and playthings on the Portfolio page.
+
+If you would like to hire me to develop a website for you of you just have an enquiry
+please do get in touch.
