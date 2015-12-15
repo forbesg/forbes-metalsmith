@@ -2,6 +2,8 @@
 title: Contact
 layout: page.hbs
 contact: true
+phone: +44(131)2026902
+email: fnbg75@gmail.com
 order: 5
 ---
 
@@ -11,6 +13,3 @@ order: 5
 5 Park Place<br />
 Edinburgh<br />
 EH6 4LB<br />
-
-Tel: [0131 202 6902](tel:+441312026902)<br />
-Email: [fnbg75@gmail.com](fnbg75@gmail.com)

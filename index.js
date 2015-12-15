@@ -7,6 +7,8 @@ var Metalsmith = require('metalsmith'),
     serve = require('metalsmith-serve'),
     watch = require('metalsmith-watch'),
     Handlebars = require('handlebars'),
+    uglify = require('metalsmith-uglify'),
+    cleanCss = require('metalsmith-clean-css'),
     fs = require('fs');
 
 Handlebars.registerPartial({
@@ -22,6 +24,8 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 
 var metalsmith = new Metalsmith(__dirname)
     .source('src')
+    .use(cleanCss())
+    .use(uglify())
     .use(markdown())
     .use(collections({
         pages: {
