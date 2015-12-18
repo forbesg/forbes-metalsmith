@@ -123,10 +123,11 @@ header nav ul li a:hover {
 .logo img {
   height: 50px;
   margin: 20px;
+  transition: all 0.2s ease-in;
 }
 .logo img:hover {
   background-color: #2b3e50;
-  transition: all 0.3s ease-in;
+  padding: 2px;
 }
 .banner {
   background-color: #2b3e50;
@@ -155,6 +156,9 @@ header nav ul li a:hover {
 .top-bottom-margin {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+.page-contents img {
+  width: 100%;
 }
 .project-container {
   position: relative;
@@ -215,7 +219,11 @@ header nav ul li a:hover {
   margin-bottom: 20px;
   border: 1px solid #EEE;
 }
-
+.card .text-center {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
 .google-card {
   width: 250px;
   padding: 20px;
@@ -223,6 +231,7 @@ header nav ul li a:hover {
 }
 
 /*** Contact Form Styling ***/
+
 .form-control {
   border: none;
   -webkit-box-shadow: none;
@@ -238,7 +247,6 @@ header nav ul li a:hover {
   font-size: 20px;
   width: 40px;
 }
-
 footer {
   background-color: #2b3e50;
   color: #000;
@@ -335,10 +343,19 @@ p.copy {
   .banner-text {
     padding: 180px 0;
   }
+  .page-contents img {
+    width: 70%;
+    float: right;
+    margin-left: 20px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-  ...
+  .page-contents img {
+    width: auto;
+    float: right;
+    margin-left: 20px;
+  }
 }
