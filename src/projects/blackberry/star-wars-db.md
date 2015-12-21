@@ -1,5 +1,6 @@
 ---
 title: Star Wars DB
+description: Star Wars DB for BlackBerry 10
 subhead: BlackBerry 10 Database for Star Wars
 image: /images/projects/blackberry/star-wars-db.jpg
 url: https://appworld.blackberry.com/webstore/content/59972365/

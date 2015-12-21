@@ -1,5 +1,6 @@
 ---
 title: Recipe Manager
+description: Recipe Manager - Manage and share your recipes in the cloud
 subhead: Manage Your Recipes in the Cloud
 image: /images/projects/webapps/recipe-manager.jpg
 url: http://recipemanager-fnbg.rhcloud.com/

@@ -1,5 +1,6 @@
 ---
 title: FNBG Website
+description: FNBG Business Cost Consults Website
 image: /images/projects/web/fnbg.jpg
 url: http://www.fnbg.co.uk
 layout: project.hbs

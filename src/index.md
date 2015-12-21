@@ -1,6 +1,6 @@
 ---
 title: Home
-description: This is a little description
+description: Forbes Gray is a freelance Web Developer from Edinburgh, Scotland - This is his homepage
 permalink: false
 layout: home.hbs
 profile: images/forbes-profile.jpg

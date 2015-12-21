@@ -1,5 +1,6 @@
 ---
 title: Love Is
+description: Love Calculator - A simple BlackBarry 10 WebWorks Application
 subhead: The Love Calculator
 image: /images/projects/blackberry/love-is.jpg
 url: https://appworld.blackberry.com/webstore/content/43684889/

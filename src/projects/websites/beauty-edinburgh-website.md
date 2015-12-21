@@ -1,5 +1,6 @@
 ---
 title: Beauty Edinburgh Website
+description: A website for Debbie Clare Skin Beauty and Wellbeing
 image: /images/projects/web/BeautyEdinburgh.jpg
 url: http://www.beautyedinburgh.co.uk
 layout: project.hbs
