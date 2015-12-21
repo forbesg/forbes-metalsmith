@@ -42,7 +42,7 @@ my skills. Creating simple Webworks/Cordova applications gave me small projects
 to to discover the capabilities and pitfalls of JavaScript.
 
 At the same time I was discovering more about running JavaScript on the server
-with NodeJS and interacting with MongoDB and Firebase NoSQL Databases. I created
+with NodeJS and interacting with NoSQL Databases sucj as MongoDB and CouchDB. I created
 a couple of applications using the MEAN Stack using Angular for the front-end.
 
 Some of my work is shown on the [Portfolio Page](/portfolio)
