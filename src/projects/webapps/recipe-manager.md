@@ -17,7 +17,7 @@ The application uses MongoDB to store users data and manage query requests.
 The back-end uses Express.js to provide the Web Server and API both of which are
 running in a Node.js environment.
 
-The front-end client side code uses Angular JS manipulate and render the data
+The front-end client side code uses Angular JS to manipulate and render the data
 retrieved from the API.
 
 Responsive layout is achieved using YETI Bootstrap and UI animations use Angulars

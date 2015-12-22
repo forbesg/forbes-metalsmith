@@ -8,7 +8,7 @@ profile: images/forbes-profile.jpg
 
 ## Welcome to Forbes' slice of the web...
 
-I am a freelance Website Developer from beautiful Edinburgh in, sometimes, sunny Scotland.
+I am a freelance Website Developer from beautiful, sometimes, sunny Edinburgh in Scotland.
 
 I build small, fast and maintainable business websites for the good folk of Scotland and beyond, as well as
 developing more complex web and mobile applications in my spare time.
