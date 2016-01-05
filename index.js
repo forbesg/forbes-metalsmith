@@ -64,7 +64,7 @@ var metalsmith = new Metalsmith(__dirname)
     }))
     .use(compress())
     .use(sitemap({
-      hostname: "http://forbesg.github.com",
+      hostname: "http://forbesg.github.io",
       omitIndex: true
     }))
     .destination('build')
