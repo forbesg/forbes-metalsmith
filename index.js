@@ -11,6 +11,7 @@ var Metalsmith = require('metalsmith'),
     cleanCss = require('metalsmith-clean-css'),
     concat = require('metalsmith-concat'),
     compress = require('metalsmith-gzip'),
+    sitemap = require('metalsmith-sitemap'),
     fs = require('fs');
 
 Handlebars.registerPartial({
@@ -62,6 +63,10 @@ var metalsmith = new Metalsmith(__dirname)
       engine: 'handlebars',
     }))
     .use(compress())
+    .use(sitemap({
+      hostname: "http://forbesg.github.com",
+      omitIndex: true
+    }))
     .destination('build')
     .use(serve({
       port: 3000,
