@@ -11,6 +11,12 @@ $(document).ready(function () {
     }
   });
 
+  $('.text-block button').on('mouseover', function () {
+    $(this.closest('.overlay-block')).addClass('button-hover');
+  });
+  $('.text-block button').on('mouseleave', function () {
+    $(this.closest('.overlay-block')).removeClass('button-hover');
+  });
   // $('.image-block').on('mouseover', function () {
   //   $(this).parent().children('.overlay-block').fadeToggle().fadeTo(300, 1);
   // });

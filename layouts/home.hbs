@@ -33,6 +33,7 @@
         <h3>Projects...</h3>
         {{#each collections.web}}
         <div class="project col-md-4 ">
+          <h4>{{this.title}}</h4>
           <div class="project-container">
             <div class="image-block">
               <a href="{{this.url}}" target="_blank">
@@ -43,7 +44,6 @@
             </div>
             <div class="overlay-block">
               <div class="text-block">
-                <h4>{{this.title}}</h4>
                 <a href="/{{this.path}}">
                   <button type="button" name="button">View Project</button>
                 </a>
