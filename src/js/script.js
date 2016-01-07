@@ -11,16 +11,12 @@ $(document).ready(function () {
     }
   });
 
-  $('.text-block button').on('mouseover', function () {
-    $(this.closest('.overlay-block')).addClass('button-hover');
+  // Overlay animation for project containers on homepage
+  $('.image-block').on('mouseover', function () {
+    $(this.closest('.project-container')).find('.overlay-block').addClass('button-hover');
   });
-  $('.text-block button').on('mouseleave', function () {
-    $(this.closest('.overlay-block')).removeClass('button-hover');
+  $('.overlay-block').on('mouseleave', function () {
+    $(this).removeClass('button-hover');
   });
-  // $('.image-block').on('mouseover', function () {
-  //   $(this).parent().children('.overlay-block').fadeToggle().fadeTo(300, 1);
-  // });
-  // $('.overlay-block').on('mouseleave', function () {
-  //   $(this).fadeToggle().fadeTo(300, 0);
-  // });
+
 });
