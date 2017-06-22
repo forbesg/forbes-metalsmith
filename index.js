@@ -8,6 +8,7 @@ var Metalsmith = require('metalsmith'),
     watch = require('metalsmith-watch'),
     Handlebars = require('handlebars'),
     uglify = require('metalsmith-uglify'),
+    sass = require('metalsmith-sass'),
     cleanCss = require('metalsmith-clean-css'),
     concat = require('metalsmith-concat'),
     compress = require('metalsmith-gzip'),
@@ -27,9 +28,13 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 
 var metalsmith = new Metalsmith(__dirname)
     .source('src')
+    .use(sass({
+      outputStyle: "expanded",
+      outputDir: 'css/'
+    }))
     .use(concat({
       files: 'css/**/*.css',
-      output: 'css/style.css'
+      output: 'css/styles.css'
     }))
     .use(cleanCss())
     .use(uglify())
@@ -67,18 +72,18 @@ var metalsmith = new Metalsmith(__dirname)
       hostname: "http://forbesg.github.io",
       omitIndex: true
     }))
-    .destination('build')
     .use(serve({
       port: 3000,
       host: '0.0.0.0'
     }))
-    // .use(watch({
-    //   paths: {
-    //     "${source}/**/*": true,
-    //     'layouts/**/*.hbs': '**/*'
-    //   },
-    //   livereload: true,
-    // }))
+    .use(watch({
+      paths: {
+        "${source}/**/*": true,
+        'layouts/**/*.hbs': '**/*'
+      },
+      livereload: true,
+    }))
+    .destination('build')
     .build(function (err) {
       if (err) console.log(err);
     });

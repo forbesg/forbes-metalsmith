@@ -26,5 +26,8 @@
     "metalsmith-sitemap": "^1.0.0",
     "metalsmith-uglify": "^1.2.1",
     "metalsmith-watch": "^1.0.1"
+  },
+  "dependencies": {
+    "metalsmith-sass": "^1.4.0"
   }
 }
