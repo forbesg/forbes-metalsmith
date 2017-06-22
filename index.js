@@ -76,6 +76,7 @@ var metalsmith = new Metalsmith(__dirname)
       port: 3000,
       host: '0.0.0.0'
     }))
+    .destination('build')
     .use(watch({
       paths: {
         "${source}/**/*": true,
@@ -83,7 +84,6 @@ var metalsmith = new Metalsmith(__dirname)
       },
       livereload: true,
     }))
-    .destination('build')
     .build(function (err) {
       if (err) console.log(err);
     });

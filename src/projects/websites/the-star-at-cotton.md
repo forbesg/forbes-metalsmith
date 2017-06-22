@@ -1,5 +1,5 @@
 ---
-title: The Star At Cotton Website
+title: The Star At Cotton
 description: A Website designed and written for The Star at Cotton, a Traditional Country Pup in the Staffordshire Moorlands
 image: /images/projects/web/the-star-at-cotton.jpg
 url: http://www.thestaratcotton.co.uk
@@ -7,22 +7,16 @@ layout: project.hbs
 features: [html, css, scss, php, Twig, GRAV CMS, javascript, bootstrap, responsive design]
 ---
 
-The Moffat Museum website was created for a small community run museum in the small
-market town of Moffat in the Scottish Borders.
+I was asked to develop a new website for an old tradional country pub in the Staffordshire Moorlands.
+Although the pub dates back to the 17th century, it was under new ownership and they were
+looking for a more modern feel.
 
-The museum had received some funding for developing their site and were looking for
-a way to show off their exhibits and allow visitors and locals to keep up to date
-with the museums latest news.
+Their requirements included a mobile friendly design, and a user friendly content management
+system to allow them to make updates to their frequently changing menu as well as adding
+events that were being held at the pub.
 
-The museum website uses a Content Management System called MODX enabling
-administrators to add and edit content with very little, or no outside assistance.
+The CMS that I chose was <a href="https://getgrav.org/" target="blank">GRAV</a>, an open source, flexible, flat file CMS
+with a very user friendly backend user interface.
 
-In addition to MODX, the site uses the Bootstrap CSS Framework making the design
-layout responsive.
-
-Although the MODX Content Management System allows for a lot of flexibility in
-the design of the site, I found that it was perhaps a little too much for a simple
-small site like this.
-
-Since this site was created I have started using Static Site Generators to create
-sites of similar size and purpose.
+I designed the template for the site from scratch, liasing with the customer during the
+design process using **PHP**, **TWIG** and **SCSS**.

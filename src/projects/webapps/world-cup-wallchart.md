@@ -1,9 +1,10 @@
 ---
-title: World Cup Wallchart
+title: World Cup Wallchart 2015
 description: World Cup Wallchart for the 2015 Brazil World Cup
 subhead: Interactive World Cup Wallchart
 image: /images/projects/webapps/WorldCupWallChart.jpg
 url: http://forbesg.github.io/world-cup-wall-chart/
+repo: https://github.com/forbesg/world-cup-wall-chart
 layout: project.hbs
 features: [HTML5, CSS3, JavaScript, Twitter Bootstrap, AJAX]
 ---

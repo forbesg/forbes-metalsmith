@@ -1,5 +1,5 @@
 ---
-title: Moffat Museum Website
+title: Moffat Museum Trust
 description: A Website designed and written for Moffat Museum
 image: /images/projects/web/moffat-museum.jpg
 url: http://www.moffatmuseum.co.uk
