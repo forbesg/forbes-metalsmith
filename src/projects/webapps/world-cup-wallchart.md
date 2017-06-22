@@ -1,6 +1,6 @@
 ---
-title: World Cup Wallchart 2015
-description: World Cup Wallchart for the 2015 Brazil World Cup
+title: World Cup Wallchart 2014
+description: World Cup Wallchart for the 2014 Brazil World Cup
 subhead: Interactive World Cup Wallchart
 image: /images/projects/webapps/WorldCupWallChart.jpg
 url: http://forbesg.github.io/world-cup-wall-chart/
@@ -9,7 +9,7 @@ layout: project.hbs
 features: [HTML5, CSS3, JavaScript, Twitter Bootstrap, AJAX]
 ---
 
-The World Cup Wallchart was created 'just' in time for the 2015 World Cup in Brazil.
+The World Cup Wallchart was created 'just' in time for the 2014 World Cup in Brazil.
 
 As a child I always had a Wallchart stuck on the wall during a World Cup which I
 slowly filled in during the tournament.
