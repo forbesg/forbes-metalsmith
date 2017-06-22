@@ -1,11 +1,7 @@
-@import 'animations';
-
-
-body {
+/*body {
   background-color: #fff;
   color: #414141;
 }
-
 h1, h2, h3, h4 {
   color: #2b3e50;
   font-weight: lighter;
@@ -13,51 +9,42 @@ h1, h2, h3, h4 {
   margin: 30px 0;
   font-family: 'Quattrocento', serif;
 }
-
 p {
   color: #414141;
   line-height: 28px;
   margin: 0 0 30px;
 }
-
 a {
   color: #5650D3;
   text-decoration: none;
-  &:hover, &:focus {
-    color: #21214B;
-    text-decoration: none;
-  }
 }
-
+a:hover, a:focus {
+  color: #21214B;
+  text-decoration: none;
+}
 hr {
   margin-top: 21px;
   margin-bottom: 21px;
   border: 0;
   border-top: 1px solid #EAEAEA;
 }
-
 button, .button {
   background-color: transparent;
   border: 1px solid #2b3e50;
-  color: #2b3e50;
-  cursor: pointer;
-  display: inline-block;
   margin: 20px 0;
   padding: 5px 10px;
+  color: #2b3e50;
   transition: all 0.3s ease-in;
 }
-
 button:hover, .button:hover {
   background-color: #2b3e50;
   color: #fff;
   transition: all 0.3s ease-in;
 }
-
 .banner-text {
   padding: 150px 0;
   text-align: right;
 }
-
 h1.title {
   color: #fff;
   text-shadow: 1px 1px 0px #000;
@@ -67,7 +54,6 @@ h1.title {
   letter-spacing: 20px;
   text-transform: uppercase;
 }
-
 .banner-text p {
   font-size: 12px;
   color: #FFF670;
@@ -77,7 +63,6 @@ h1.title {
   text-transform: lowercase;
   padding-right: 20px;
 }
-
 .nav-toggle {
   position: absolute;
   top: 10px;
@@ -88,16 +73,16 @@ h1.title {
   display: block;
   cursor: pointer;
   z-index: 3;
-  &:hover {
-    color: #D5D5D5;
-    text-shadow: 1px 1px 0 #585858;
-  }
-  i {
-    transition: all 0.3s ease;
-  }
 }
-
+.nav-toggle:hover {
+  color: #D5D5D5;
+  text-shadow: 1px 1px 0 #585858;
+}
+.nav-toggle i {
+  transition: all 0.3s ease;
+}
 header nav {
+  display: none;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -105,63 +90,42 @@ header nav {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 0%;
+  height: 100%;
   text-align: center;
+  padding-top: 50px;
   background: rgba(0, 0, 0, 0.85);
-  overflow: hidden;
-  transition: height 0.5s;
-  &.open {
-    height: 100%;
-    ul {
-      li:nth-child(even) {
-        animation: 1s cubic-bezier(0.9, 0.26, 0.74, 1.13) fadeInLeft;
-      }
-      li:nth-child(odd) {
-        animation: 1s cubic-bezier(0.9, 0.26, 0.74, 1.13) fadeInRight;
-      }
-    }
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 0;
-    line-height: 50px;
-    margin-bottom: 0;
-    height: 100%;
-
-    li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 20%;
-
-      a {
-        color: #FFF;
-        font-size: 16px;
-        text-transform: uppercase;
-        display: block;
-        padding: 10px;
-        text-shadow: 1px 1px 0 #000;
-        &:hover {
-          color: #E2E2E2;
-          text-decoration: none;
-        }
-      }
-    }
-  }
 }
-
+header nav ul {
+  padding-left: 0;
+  line-height: 50px;
+  margin-bottom: 0;
+  height: 100%;
+}
+header nav ul li {
+  display: block;
+  height: 20%;
+}
+header nav ul li a {
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  text-shadow: 1px 1px 0 #000;
+}
+header nav ul li a:hover {
+  color: #E2E2E2;
+  text-decoration: none;
+}
 .logo img {
   height: 50px;
   margin: 20px;
   transition: all 0.2s ease-in;
-  &:hover {
-    background-color: #2b3e50;
-    padding: 2px;
-  }
 }
-
+.logo img:hover {
+  background-color: #2b3e50;
+  padding: 2px;
+}
 .banner {
   background-color: #2b3e50;
   background-image: url(../images/background.jpg);
@@ -171,109 +135,90 @@ header nav {
   border-bottom: 1px solid #fff;
   color: #000;
   overflow: hidden;
-  &.home {
-    background-image: url(../images/background.jpg);
-  }
-  &.about {
-    background-image: url(../images/about-bg.jpg);
-  }
-  &.contact {
-    background-image: url(../images/contact-bg.jpg);
-  }
-  &.portfolio {
-    background-image: url(../images/portfolio-bg.jpg);
-  }
-  &.project-page {
-    background-image: url(../images/project-bg.jpg);
-  }
 }
-
+.banner.home {
+  background-image: url(../images/background.jpg);
+}
+.banner.about {
+  background-image: url(../images/about-bg.jpg);
+}
+.banner.contact {
+  background-image: url(../images/contact-bg.jpg);
+}
+.banner.portfolio {
+  background-image: url(../images/portfolio-bg.jpg);
+}
+.banner.project-page {
+  background-image: url(../images/project-bg.jpg);
+}
 .top-bottom-margin {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
 .page-contents img {
   width: 100%;
 }
-
 .project-container {
   position: relative;
   overflow: hidden;
 }
-
 .project {
   margin: 60px 0;
-  a {
-    /*display: block;*/
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
-    transition: all 0.5s ease-in-out;
-    &:hover {
-      text-decoration: none;
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%);
-      transition: all 0.5s ease-in-out;
-    }
-  }
-  img {
-    max-width: 100%;
-  }
 }
-.projects-block {
-  margin-bottom: 50px;
+.project a {
+  /*display: block;*/
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  transition: all 0.5s ease-in-out;
 }
-
+.project a:hover {
+  text-decoration: none;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+.project img {
+  max-width: 100%;
+}
 .overlay-block {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   top: 0;
   width: 100%;
-  height: 0%;
+  height: 100%;
+  padding: 20% 0;
   display: block;
-  overflow: hidden;
-  transition: height 0.5s cubic-bezier(0.55,-0.12, 0.5, 1.08);
-  &.show {
-    height: 100%;
-  }
-  .text-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    h4 {
-      margin: 10px 0;
-    }
-  }
-  button {
-    background-color: transparent;
-    color: #000;
-    border: 1px solid #000;
-    &:hover {
-      background-color: #2b3e50;
-      color: #fff;
-      border: 1px solid #2b3e50;
-      transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1);
-    }
-  }
+  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
-
-
-
+.overlay-block button{
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+.overlay-block button:hover  {
+  background-color: #2b3e50;
+  color: #fff;
+  border: 1px solid #2b3e50;
+  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.text-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .card {
   padding: 20px;
-  img {
-    margin-bottom: 20px;
-    border: 1px solid #EEE;
-  }
-  .text-center {
-    position: absolute;
-    bottom: -30px;
-    right: 20px;
-  }
 }
-
+.card img {
+  margin-bottom: 20px;
+  border: 1px solid #EEE;
+}
+.card .text-center {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+}
 .google-card {
   width: 250px;
   padding: 0 20px 20px 20px;
@@ -286,62 +231,56 @@ header nav {
   border: none;
   -webkit-box-shadow: none;
   border: 1px solid #A6A6A6;
-  &:focus {
-    border-color: #0A2E52;
-  }
 }
-
+.form-control:focus {
+  border-color: #0A2E52;
+}
 .social-links {
   margin-bottom: 20px;
 }
-
 .social-contacts i, .contacts i {
   font-size: 20px;
   width: 40px;
 }
-
 footer {
   background-color: #2b3e50;
   color: #000;
   margin-top: 50px;
   padding: 20px 0;
-  ul {
-    padding-left: 0;
-    margin: 20px;
-  }
-  nav li {
-    color: #000;
-    display: inline-block;
-    a {
-      padding: 5px 10px;
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 12px;
-      color: #fff;
-      &:hover {
-        color: #E2E2E2;
-        text-decoration: none;
-      }
-    }
-  }
 }
-
+footer ul {
+  padding-left: 0;
+  margin: 20px;
+}
+footer nav li {
+  color: #000;
+  display: inline-block;
+}
+footer nav li a {
+  padding: 5px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+}
+footer nav li a:hover {
+  color: #E2E2E2;
+  text-decoration: none;
+}
 .social {
   padding: 30px 0;
 }
-
 footer a i.fa {
   color: #fff;
   font-size: 20px;
   margin: 0 20px;
   transition: all 0.2s ease;
-  &:hover {
-    color: #000;
-    transform: scale(1.2);
-    transition: all 0.2s ease;
-  }
 }
-
+footer a i.fa:hover {
+  color: #000;
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
 p.copy {
   color: #dadada;
   font-size: 12px;
@@ -350,10 +289,9 @@ p.copy {
 /*** 404 Page ***/
 
 h1.four-o-four {
-  display: inline-block;
+  display:inline-block;
   animation-delay: 2s;
 }
-
 .not-found h1 {
   font-size: 80px;
   border: 1px solid #2b3e50;
@@ -365,13 +303,17 @@ h1.four-o-four {
 
 /*** Media Queries ***/
 
+
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
   h1.title {
     font-size: 34px;
   }
-  .banner-text p, footer nav li a {
+  .banner-text p {
+    font-size: 16px;
+  }
+  footer nav li a {
     font-size: 16px;
   }
   .not-found h1 {
@@ -391,26 +333,25 @@ h1.four-o-four {
     padding: 0;
     text-align: center;
     background: transparent;
-    ul {
-      display: block;
-      padding-left: 0;
-      line-height: 50px;
-      margin-bottom: 0;
-      li {
-        display: inline-block;
-        a {
-          font-size: 14px;
-          display: inline-block;
-          &:hover {
-            color: #E2E2E2;
-            text-decoration: none;
-          }
-        }
-      }
-    }
   }
   .nav-toggle {
     display: none;
+  }
+  header nav ul {
+    padding-left: 0;
+    line-height: 50px;
+    margin-bottom: 0;
+  }
+  header nav ul li {
+    display: inline-block;
+  }
+  header nav ul li a {
+    font-size: 14px;
+    display: inline-block;
+  }
+  header nav ul li a:hover {
+    color: #E2E2E2;
+    text-decoration: none;
   }
   .banner-text {
     padding: 180px 0;
@@ -424,11 +365,11 @@ h1.four-o-four {
     margin: 20px 0;
   }
   .overlay-block {
-    // top: 500px;
-    &.button-hover {
-      background-color: rgba(255, 255, 255, 0.8);
-      top: 0;
-    }
+    top: 500px;
+  }
+  .overlay-block.button-hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    top: 0;
   }
 }
 
@@ -440,4 +381,4 @@ h1.four-o-four {
     float: right;
     margin-left: 20px;
   }
-}
+}*/

@@ -1,4 +1,4 @@
-<div class="web">
+<div class="projects-block web">
   <h2>Website Projects</h2>
   <div class="row">
     {{#each collections.web}}
@@ -7,9 +7,7 @@
         <h4>{{this.title}}</h4>
         <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
         <div class="text-center">
-          <a href="/{{this.path}}">
-            <button type="button" name="button">View Project</button>
-          </a>
+          <a href="/{{this.path}}" class="button">View Project</a>
         </div>
       </div>
     </div>
@@ -17,7 +15,7 @@
   </div>
 </div>
 <hr>
-<div class="blackberry">
+<div class="projects-block blackberry">
   <h2>BlackBerry Projects</h2>
   <div class="row">
     {{#each collections.blackberry}}
@@ -26,9 +24,7 @@
           <h4>{{this.title}}</h4>
           <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
           <div class="text-center">
-            <a href="/{{this.path}}">
-              <button type="button" name="button">View Project</button>
-            </a>
+            <a href="/{{this.path}}" class="button">View Project</a>
           </div>
         </div>
       </div>
@@ -36,7 +32,7 @@
   </div>
 </div>
 <hr>
-<div class="webapps">
+<div class="projects-block webapps">
   <h2>Web Application Projects</h2>
   <div class="row">
     {{#each collections.webapps}}
@@ -45,9 +41,7 @@
           <h4>{{this.title}}</h4>
           <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
           <div class="text-center">
-            <a href="/{{this.path}}">
-              <button type="button" name="button">View Project</button>
-            </a>
+            <a href="/{{this.path}}" class="button">View Project</a>
           </div>
         </div>
       </div>
