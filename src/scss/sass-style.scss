@@ -87,13 +87,41 @@ h1.title {
   padding: 5px 10px;
   display: block;
   cursor: pointer;
+  height: 50px;
+  width: 50px;
   z-index: 3;
-  &:hover {
-    color: #D5D5D5;
-    text-shadow: 1px 1px 0 #585858;
+  span.bar {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    margin: 9px 0;
+    transition: background-color 0.3s, transform 0.5s, opacity 0.8s;
   }
-  i {
-    transition: all 0.3s ease;
+  &:hover {
+    span.bar {
+      background-color: #DDD;
+    }
+  }
+  // When mobile nav is open
+  &.open {
+    span.bar {
+      background-color: #FFF670;
+      &:nth-child(even) {
+        opacity: 0;
+        transition: opacity 0s;
+      }
+      &:first-child {
+        transform: rotate(45deg);
+        top: 10px;
+      }
+      &:last-child {
+        transform: rotate(-225deg);
+        transition: transform 0.5s;
+        top: -10px;
+      }
+    }
   }
 }
 
@@ -109,15 +137,15 @@ header nav {
   text-align: center;
   background: rgba(0, 0, 0, 0.85);
   overflow: hidden;
-  transition: height 0.5s;
+  // transition: height 0.5s;
   &.open {
     height: 100%;
     ul {
       li:nth-child(even) {
-        animation: 1s cubic-bezier(0.9, 0.26, 0.74, 1.13) fadeInLeft;
+        animation: 0.5s cubic-bezier(0.9, 0.26, 0.74, 1.13) fadeInLeft;
       }
       li:nth-child(odd) {
-        animation: 1s cubic-bezier(0.9, 0.26, 0.74, 1.13) fadeInRight;
+        animation: 0.5s cubic-bezier(0.9, 0.26, 0.74, 1.13) fadeInRight;
       }
     }
   }
