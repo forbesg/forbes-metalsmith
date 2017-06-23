@@ -4,9 +4,14 @@
     {{#each collections.web}}
     <div class="col-sm-6">
       <div class="card row">
-        <h4>{{this.title}}</h4>
-        <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
-        <div class="text-center">
+        <header>
+          <h4>{{this.title}}</h4>
+        </header>
+
+        <figure>
+          <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
+        </figure>
+        <div class="button-container">
           <a href="/{{this.path}}" class="button">View Project</a>
         </div>
       </div>
@@ -21,9 +26,13 @@
     {{#each collections.blackberry}}
       <div class="col-xs-6 col-sm-4">
         <div class="card row">
-          <h4>{{this.title}}</h4>
-          <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
-          <div class="text-center">
+          <header>
+            <h4>{{this.title}}</h4>
+          </header>
+          <figure>
+            <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
+          </figure>
+          <div class="button-container">
             <a href="/{{this.path}}" class="button">View Project</a>
           </div>
         </div>
@@ -38,9 +47,13 @@
     {{#each collections.webapps}}
       <div class="col-sm-6">
         <div class="card row">
-          <h4>{{this.title}}</h4>
-          <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
-          <div class="text-center">
+          <header>
+            <h4>{{this.title}}</h4>
+          </header>
+          <figure>
+            <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
+          </figure>
+          <div class="button-container">
             <a href="/{{this.path}}" class="button">View Project</a>
           </div>
         </div>

@@ -26,64 +26,66 @@ Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
 
-var metalsmith = new Metalsmith(__dirname)
-    .source('src')
-    .use(sass({
-      outputStyle: "expanded",
-      outputDir: 'css/'
-    }))
-    .use(concat({
-      files: 'css/**/*.css',
-      output: 'css/styles.css'
-    }))
-    .use(cleanCss())
-    .use(uglify())
-    .use(markdown())
-    .use(collections({
-        pages: {
-          pattern: 'pages/*.html',
-          sortBy: 'order'
-        },
-        web: {
-          pattern: 'projects/websites/*.html'
-        },
-        blackberry: {
-          pattern: 'projects/blackberry/*.html'
-        },
-        webapps: {
-          pattern: 'projects/webapps/*.html'
-        }
-    }))
-    .use(branch('pages/*.html')
-      .use(permalinks({
-        pattern: ":title"
-      }))
-    )
-    .use(branch('projects/**/*.html')
-      .use(permalinks({
-        pattern: "portfolio/:collection/:title"
-      }))
-    )
-    .use(layouts({
-      engine: 'handlebars',
-    }))
-    .use(compress())
-    .use(sitemap({
-      hostname: "http://forbesg.github.io",
-      omitIndex: true
-    }))
-    .use(serve({
-      port: 3000,
-      host: '0.0.0.0'
-    }))
-    .destination('build')
-    .use(watch({
-      paths: {
-        "${source}/**/*": true,
-        'layouts/**/*.hbs': '**/*'
+var metalsmith = new Metalsmith(__dirname);
+
+metalsmith.source('src')
+  .use(watch({
+    paths: {
+      "${source}/**/*": true,
+      '${source}/../layouts/**/*.hbs': '**/*',
+      '${source}/scss/*.scss': '**/*'
+    },
+    livereload: true,
+  }))
+  .use(sass({
+    outputStyle: "expanded",
+    outputDir: 'css/'
+  }))
+  .use(concat({
+    files: 'css/**/*.css',
+    output: 'css/styles.css'
+  }))
+  .use(cleanCss())
+  .use(uglify())
+  .use(markdown())
+  .use(collections({
+      pages: {
+        pattern: 'pages/*.html',
+        sortBy: 'order'
       },
-      livereload: true,
+      web: {
+        pattern: 'projects/websites/*.html'
+      },
+      blackberry: {
+        pattern: 'projects/blackberry/*.html'
+      },
+      webapps: {
+        pattern: 'projects/webapps/*.html'
+      }
+  }))
+  .use(branch('pages/*.html')
+    .use(permalinks({
+      pattern: ":title"
     }))
-    .build(function (err) {
-      if (err) console.log(err);
-    });
+  )
+  .use(branch('projects/**/*.html')
+    .use(permalinks({
+      pattern: "portfolio/:collection/:title"
+    }))
+  )
+  .use(layouts({
+    engine: 'handlebars',
+  }))
+  .use(compress())
+  .use(sitemap({
+    hostname: "http://forbesg.github.io",
+    omitIndex: true
+  }))
+  .use(serve({
+    port: 3000,
+    host: '0.0.0.0'
+  }))
+  .destination('build')
+  .build(function (err) {
+    if (err) console.log(err);
+  });
