@@ -1,7 +1,7 @@
 ---
 title: About
 layout: page.hbs
-description: Forbes Gray is a freelance Web Developer from Edinburgh - This is a little about him
+description: Forbes Gray is a freelance Web Developer from Edinburgh - This is a little about him and his journey into Code and Web Development
 subhead: A Little About Me
 order: 1
 ---
@@ -10,7 +10,7 @@ order: 1
 
 My interest in Web Development started fairly late. I have a background in sales
 spanning 10 years in the telecoms industry. As my
-skills grew I started up my own company supplying telecoms to business.
+skills grew I started up my own company supplying <a href="https://www.fnbg.co.uk" target="_blank">telecoms to business</a>.
 
 As part of any new start-up business, spending money was not something I wanted to do too much
 of and yet I knew the importance of having an online presence.

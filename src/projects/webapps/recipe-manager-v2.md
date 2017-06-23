@@ -25,5 +25,5 @@ to handle user authentication, Firbase Hosting to host the application over HTTP
 and Firebase Cloud functions to trigger notifications when changes were made to
 the database.
 
-This was also my first step into using CSS Flexbox which enabled my to create
+This was also my first step into using CSS Flexbox which enabled me to create
 the responsive layout quickly and without the need for a CSS framework.

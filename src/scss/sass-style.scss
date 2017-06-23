@@ -165,7 +165,7 @@ header nav {
 .banner {
   background-color: #2b3e50;
   background-image: url(../images/background.jpg);
-  height: 600px;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   border-bottom: 1px solid #fff;
@@ -185,6 +185,17 @@ header nav {
   }
   &.project-page {
     background-image: url(../images/project-bg.jpg);
+  }
+  .banner-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .banner-text-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 
@@ -368,6 +379,9 @@ h1.four-o-four {
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+  .banner {
+    height: 600px;
+  }
   h1.title {
     font-size: 34px;
   }
