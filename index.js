@@ -31,7 +31,7 @@ var metalsmith = new Metalsmith(__dirname);
 metalsmith.source('src')
   .use(watch({
     paths: {
-      "${source}/**/*": true,
+      "${source}/**/*": '**/*',
       '${source}/../layouts/**/*.hbs': '**/*',
       '${source}/scss/*.scss': '**/*'
     },
