@@ -78,7 +78,7 @@ metalsmith.source('src')
   }))
   .use(compress())
   .use(sitemap({
-    hostname: "http://forbesg.github.io",
+    hostname: "https://forbesg.github.io",
     omitIndex: true
   }))
   .use(serve({
