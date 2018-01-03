@@ -25,6 +25,10 @@ Handlebars.registerPartial({
 Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
+Handlebars.registerHelper('currentYear', function() {
+  var date = new Date();
+  return date.getFullYear();
+});
 
 var metalsmith = new Metalsmith(__dirname);
 
