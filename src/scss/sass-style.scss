@@ -102,7 +102,7 @@ button:hover, .button:hover {
 }
 .banner {
   background-color: #2b3e50;
-  background-image: url(../images/background.jpg);
+  background-image: url(/images/background.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -110,19 +110,19 @@ button:hover, .button:hover {
   color: #000;
   overflow: hidden;
   &.home {
-    background-image: url(../images/background.jpg);
+    background-image: url(/images/background.jpg);
   }
   &.about {
-    background-image: url(../images/about-bg.jpg);
+    background-image: url(/images/about-bg.jpg);
   }
   &.contact {
-    background-image: url(../images/contact-bg.jpg);
+    background-image: url(/images/contact-bg.jpg);
   }
   &.portfolio {
-    background-image: url(../images/portfolio-bg.jpg);
+    background-image: url(/images/portfolio-bg.jpg);
   }
   &.project-page {
-    background-image: url(../images/project-bg.jpg);
+    background-image: url(/images/project-bg.jpg);
   }
   .banner-inner {
     display: flex;
