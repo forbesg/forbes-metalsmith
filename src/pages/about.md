@@ -11,7 +11,7 @@ image: /images/about-bg.jpg
 
 My interest in Web Development started fairly late. I have a background in sales
 spanning 10 years in the telecoms industry. As my
-skills grew I started up my own company supplying <a href="https://www.fnbg.co.uk" target="_blank">telecoms to business</a>.
+skills grew I started up my own company supplying <a href="https://www.fnbg.co.uk" target="_blank" rel="noopener">telecoms to business</a>.
 
 As part of any new start-up business, spending money was not something I wanted to do too much
 of and yet I knew the importance of having an online presence.
