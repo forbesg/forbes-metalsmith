@@ -6,6 +6,7 @@ contact: true
 phone: +44(131)2026902
 email: fnbg75@gmail.com
 order: 5
+image: /images/contact-bg.jpg
 ---
 
 #### Contact Information

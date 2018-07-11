@@ -6,6 +6,7 @@ description: My name is Forbes Gray. I am a Freelance Web Developer from Edinbur
 permalink: false
 layout: home.hbs
 profile: images/forbes-profile.jpg
+image: /images/background.jpg
 ---
 
 ## Welcome to Forbes' slice of the web...

@@ -4,6 +4,7 @@ layout: page.hbs
 description: Forbes Gray is a freelance Web Developer from Edinburgh - This is a little about him and his journey into Code and Web Development
 subhead: A Little About Me
 order: 1
+image: /images/about-bg.jpg
 ---
 
 ## My Journey So Far
