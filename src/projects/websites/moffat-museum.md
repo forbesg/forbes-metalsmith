@@ -1,6 +1,6 @@
 ---
 title: Moffat Museum Trust
-description: A Website designed and written for Moffat Museum
+description: A GRAV CMS website designed and developed for the Moffat Museum Trust in Moffat, Dumfriesshire.
 image: /images/projects/web/moffat-museum.jpg
 url: http://www.moffatmuseum.co.uk
 layout: project.hbs

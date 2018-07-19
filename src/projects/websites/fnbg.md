@@ -1,6 +1,6 @@
 ---
 title: FNBG Ltd
-description: FNBG Business Cost Consults Website
+description: A static website designed and developed for FNBG Business Cost Consultants in Edinburgh.
 image: /images/projects/web/fnbg.jpg
 url: http://www.fnbg.co.uk
 layout: project.hbs
