@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "metalsmith-sass": "^1.5.1",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.2"
   }
 }
