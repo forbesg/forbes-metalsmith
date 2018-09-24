@@ -24,6 +24,7 @@ a {
   color: #5650D3;
   text-decoration: none;
   outline: none;
+  transition: color 0.2s;
   &:hover, &:focus {
     color: #21214B;
     outline: none;
