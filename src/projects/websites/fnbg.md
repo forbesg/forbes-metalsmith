@@ -2,12 +2,12 @@
 title: FNBG Ltd
 description: A static website designed and developed for FNBG Business Cost Consultants in Edinburgh.
 image: /images/projects/web/fnbg.jpg
-url: http://www.fnbg.co.uk
+url: https://fnbg.co.uk
 layout: project.hbs
 features: [html, css, php, javascript, bootstrap, responsive design, ajax]
 ---
 
-This is a website for my Business, <a href="http://fnbg.co.uk" target="_blank">FNBG Business Cost Consultants</a>, and was what
+This is a website for my Business, <a href="https://fnbg.co.uk" rel="noopener" target="_blank">FNBG Business Cost Consultants</a>, and was what
 led me to my interest in web development.
 
 As part of starting the business there are all sorts of things that you need to

@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{#ifCond path "index.html"}}
+    <link rel="canonical" href="https://forbesg.github.io/">
+    {{else}}
+    <link rel="canonical" href="https://forbesg.github.io/{{ path }}">
+    {{/ifCond}}
     <title>Forbes Gray | {{ title }}</title>
     <meta name="description" content="{{ description }}">
     <meta name="twitter:card" content="summary">
