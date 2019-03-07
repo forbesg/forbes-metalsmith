@@ -330,7 +330,7 @@ button:hover, .button:hover {
         opacity: 1;
         .text-block {
           h4 {
-            animation: 0.5s fadeInLeft cubic-bezier(0.55,-0.12, 0.5, 1.08);
+            animation: 0.5s dropIn cubic-bezier(0.55,-0.12, 0.5, 1.08);
           }
           a {
             animation: 0.5s fadeInUp cubic-bezier(0.55,-0.12, 0.5, 1.08);

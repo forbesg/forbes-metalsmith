@@ -4,9 +4,9 @@ description: A web application for the management and presentation of audio reco
 subhead: Oral History Web Application
 image: /images/projects/webapps/duns-oral-history-project.jpg
 url: https://dunsoralhistoryproject.co.uk
-# repo: 
+# repo:
 layout: project.hbs
-features: [HTML5, SCSS, Vue JS, Nuxt JS, Firebase, PWA]
+features: [HTML5, SCSS, Vue JS, Nuxt JS, Firebase, Babel, Webpack, PWA]
 ---
 
 The Duns Oral History web application was written in order to manage and present audio recordings

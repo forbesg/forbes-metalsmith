@@ -1,6 +1,6 @@
 ---
 title: The Star At Cotton
-description: A Website designed and written for The Star at Cotton, a Traditional Country Pub in the Staffordshire Moorlands
+description: A Website designed and developed for The Star at Cotton, a Traditional Country Pub in the Staffordshire Moorlands
 image: /images/projects/web/the-star-at-cotton.jpg
 url: http://www.thestaratcotton.co.uk
 layout: project.hbs

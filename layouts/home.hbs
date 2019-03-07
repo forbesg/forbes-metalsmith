@@ -32,21 +32,21 @@
       <div class="">
         <h3>Projects...</h3>
         {{#each collections.web}}
-        <div class="project col-xs-12 col-sm-6 col-lg-3">
-          <div class="project-container">
-            <div class="image-block">
-              <figure>
-                <img src="{{this.image}}" alt="{{this.title}} Image" />
-              </figure>
-              <div class="overlay-block">
-                <div class="text-block">
-                  <h4>{{this.title}}</h4>
-                  <a href="/{{this.path}}" class="button">View Project</a>
+          <div class="project col-xs-12 col-sm-6 col-lg-3">
+            <div class="project-container">
+              <div class="image-block">
+                <figure>
+                  <img src="{{this.image}}" alt="{{this.title}} Image" />
+                </figure>
+                <div class="overlay-block">
+                  <div class="text-block">
+                    <h4>{{this.title}}</h4>
+                    <a href="/{{this.path}}" class="button">View Project</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         {{/each}}
         <div class="text-center">
           <a href="/portfolio" class="button">View Portfolio Page</a>

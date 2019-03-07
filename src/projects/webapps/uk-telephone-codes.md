@@ -1,6 +1,6 @@
 ---
 title: UK Telephone Codes
-description: A Simple Client Side Application for finding UK Telephone Area Codes
+description: A simple client side web application for finding UK Telephone Area Codes
 subhead: Find UK Telephone Codes
 image: /images/projects/webapps/uk-telephone-codes.jpg
 url: http://forbesg.github.io/uk-telephone-codes

@@ -1,6 +1,6 @@
 ---
 title: World Cup Wallchart 2014
-description: World Cup Wallchart for the 2014 Brazil World Cup
+description: A web application World Cup Wallchart for the 2014 Brazil World Cup
 subhead: Interactive World Cup Wallchart
 image: /images/projects/webapps/WorldCupWallChart.jpg
 url: http://forbesg.github.io/world-cup-wall-chart/

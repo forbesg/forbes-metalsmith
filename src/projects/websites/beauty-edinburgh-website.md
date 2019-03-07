@@ -1,6 +1,6 @@
 ---
 title: Beauty Edinburgh
-description: A website designed for Edinburgh Beauty Salon Debbie Clare Skin Beauty and Wellbeing
+description: A PHP website designed and developed for Edinburgh Beauty Salon Debbie Clare Skin Beauty and Wellbeing
 image: /images/projects/web/BeautyEdinburgh.jpg
 url: http://www.beautyedinburgh.co.uk
 layout: project.hbs

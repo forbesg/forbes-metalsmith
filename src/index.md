@@ -1,8 +1,6 @@
 ---
 title: Freelance Web Developer Edinburgh
-description: My name is Forbes Gray. I am a Freelance Web Developer from Edinburgh, Scotland.
-  This is a Personal Website with a little bit of information about how I got in
-  to Web Development and some examples of my work to date.
+description: A Freelance Web Developer in Edinburgh, Scotland. Specialising in fast responsive websites and JavaScript web applications.
 permalink: false
 layout: home.hbs
 profile: images/forbes-profile.jpg
