@@ -436,11 +436,16 @@ button:hover, .button:hover {
 
 .social-links {
   margin-bottom: 20px;
+  a {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.social-contacts i, .contacts i {
-  font-size: 20px;
-  width: 40px;
+.social-contacts svg, .contacts svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 footer {
@@ -475,9 +480,11 @@ footer {
 
 footer a {
   color: #fff;
-  i.fa {
+  svg {
     font-size: 20px;
     margin: 0 20px;
+    height: 30px;
+    width: 30px;
     transition: all 0.2s ease;
     &:hover {
       transform: scale(1.2);

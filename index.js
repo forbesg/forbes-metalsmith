@@ -13,7 +13,8 @@ var Metalsmith = require('metalsmith'),
     concat = require('metalsmith-concat'),
     compress = require('metalsmith-gzip'),
     sitemap = require('metalsmith-sitemap'),
-    fs = require('fs');
+    fs = require('fs'),
+    workboxBuild = require('workbox-build');
 
 Handlebars.registerPartial({
   'head': fs.readFileSync('./layouts/partials/head.hbs').toString(),
@@ -35,6 +36,18 @@ Handlebars.registerHelper('ifCond', function(v1, v2, options) {
   }
   return options.inverse(this);
 });
+
+const buildSW = () => {
+  // This will return a Promise
+  return workboxBuild.injectManifest({
+    swSrc: 'src/service-worker.js',
+    swDest: 'build/service-worker.js',
+    globDirectory: 'build',
+    globPatterns: [
+      '**\/*.{js,css,html,png}',
+    ]
+  })
+}
 
 var metalsmith = new Metalsmith(__dirname);
 
@@ -93,9 +106,24 @@ metalsmith.source('src')
   }))
   .use(serve({
     port: 3000,
-    host: '0.0.0.0'
+    host: 'localhost'
   }))
   .destination('build')
   .build(function (err) {
-    if (err) console.log(err);
+    if (err) {
+      console.log(err)
+      return
+    }
+    /**
+    * Generate SW precache
+    **/
+    buildSW()
+    .then(({count, size, warnings}) => {
+      // Optionally, log any warnings and details.
+      warnings.forEach(console.warn);
+      console.log(`${count} files will be precached, totaling ${size} bytes.`);
+    })
+    .catch(err => {
+      console.log(err);
+    })
   });
