@@ -165,8 +165,9 @@ button:hover, .button:hover {
     }
   }
   header {
-    .logo img {
+    .logo svg {
       height: 50px;
+      width: 50px;
       margin: 20px;
       transition: all 0.2s ease-in;
       &:hover {
