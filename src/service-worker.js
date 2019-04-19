@@ -1,7 +1,6 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.2.0/workbox-sw.js');
 
 if (workbox) {
-  console.log('Yay! Workbox is loaded 🎉');
   workbox.routing.registerRoute(
     // Cache CSS files.
     /\.css$/,
