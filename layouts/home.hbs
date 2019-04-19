@@ -1,13 +1,7 @@
 {{> head}}
   <div class="container-fluid banner">
     <div class="banner-inner">
-      <header>
-        <div class="row">
-
-          {{> header}}
-
-        </div>
-      </header>
+      {{> header}}
       <div class="banner-text-container">
         <div class="banner-text">
           <h1 class="title">Forbes Gray</h1>
@@ -19,35 +13,35 @@
     </div>
   </div>
   <div class="container main-container">
-    <div class="row text-center top-bottom-margin">
-      <div class="col-md-8 col-md-offset-2">
-        {{{ contents }}}
-        <div class="text-center">
-          <a href="/contact" class="button">Get in touch..</a>
-        </div>
+    <div class="top-bottom-margin text-center">
+      {{{ contents }}}
+      <div class="text-center">
+        <a href="/contact" class="button">Get in touch..</a>
       </div>
     </div>
     <hr>
-    <div class="row text-center top-bottom-margin">
+    <div class="text-center top-bottom-margin">
       <div class="">
         <h3>Projects...</h3>
-        {{#each collections.web}}
-          <div class="project col-xs-12 col-sm-6 col-lg-3">
-            <div class="project-container">
-              <div class="image-block">
-                <figure>
-                  <img src="{{this.image}}" alt="{{this.title}} Image" />
-                </figure>
-                <div class="overlay-block">
-                  <div class="text-block">
-                    <h4>{{this.title}}</h4>
-                    <a href="/{{this.path}}" class="button">View Project</a>
+        <div class="flexbox">
+          {{#each collections.web}}
+            <div class="project">
+              <div class="project-container">
+                <div class="image-block">
+                  <figure>
+                    <img src="{{this.image}}" alt="{{this.title}} Image" />
+                  </figure>
+                  <div class="overlay-block">
+                    <div class="text-block">
+                      <h4>{{this.title}}</h4>
+                      <a href="/{{this.path}}" class="button">View Project</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        {{/each}}
+          {{/each}}
+        </div>
         <div class="text-center">
           <a href="/portfolio" class="button">View Portfolio Page</a>
         </div>

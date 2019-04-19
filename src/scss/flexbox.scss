@@ -1,0 +1,16 @@
+.flexbox {
+  display: flex;
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.negative-margin {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+  &.align-center {
+    align-items: center;
+  }
+}

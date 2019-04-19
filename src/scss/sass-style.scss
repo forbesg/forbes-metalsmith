@@ -1,4 +1,28 @@
 @import 'animations';
+@import 'flexbox';
+/*
+* Meyer's css reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	vertical-align: baseline;
+}
 
 body {
   background-color: #fff;
@@ -12,6 +36,19 @@ h1, h2, h3, h4 {
   text-transform: lowercase;
   margin: 30px 0;
   font-family: 'Quattrocento', serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4 {
+  font-size: 1.4em;
 }
 
 p {
@@ -48,12 +85,36 @@ button, .button {
   margin: 20px 0;
   padding: 5px 10px;
   transition: all 0.3s ease-in;
+  svg {
+    height: 15px;
+    width: 15px;
+    path {
+      fill: #2b3e50;
+      transition: all 0.3s ease-in;
+    }
+  }
 }
 
 button:hover, .button:hover {
   background-color: #2b3e50;
   color: #fff;
   transition: all 0.3s ease-in;
+  svg {
+    path {
+      fill: #fff;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .nav-toggle {
@@ -142,6 +203,7 @@ button:hover, .button:hover {
           text-shadow: 1px 1px 0px #000;
           font-family: inherit;
           font-size: 1.8em;
+          font-weight: 100;
           letter-spacing: 20px;
           text-transform: uppercase;
           animation: 0.5s fadeInRight;
@@ -165,6 +227,7 @@ button:hover, .button:hover {
     }
   }
   header {
+    display: flex;
     .logo svg {
       height: 50px;
       width: 50px;
@@ -307,13 +370,9 @@ button:hover, .button:hover {
     Project Cards on Homepage
   ***/
   .project {
-    margin: 60px 0;
+    margin: 60px 10px;
     img {
       max-width: 100%;
-    }
-    .project-container {
-      position: relative;
-      overflow: hidden;
     }
 
     .overlay-block {
@@ -356,13 +415,16 @@ button:hover, .button:hover {
 
 
   @media (min-width: 992px) {
+    .projects {
+      margin: inherit -10px;
+    }
     .page-contents img {
       width: 70%;
       float: right;
       margin-left: 20px;
     }
     .project {
-      margin: 20px 0;
+      margin: 20px 10px;
     }
     .overlay-block {
       // top: 500px;
@@ -391,19 +453,29 @@ button:hover, .button:hover {
 
 
 .card {
-  box-shadow: 0 0 1px #ddd;
-  margin: 10px;
+  // box-shadow: 0 0 1px #485563;
+  margin: 10px 10px 30px 10px;
+  // min-height: 460px;
   padding: 0 10px 10px 10px;
+  flex: 1 1 300px;
+  // max-width: 330px;
+  display: flex;
+  flex-direction: column;
   header {
+    flex: 0;
     margin: 0 -10px;
     h4 {
       margin: 0;
       padding: 20px 10px;
     }
   }
+  .summary {
+    flex: 1;
+    font-size: .8em;
+  }
 
   figure {
-    margin: 0 -10px 20px -10px;
+    margin: 0;
     img {
       width: 100%;
       // border: 1px solid #EEE;
@@ -411,6 +483,7 @@ button:hover, .button:hover {
   }
 
   .button-container {
+    flex: 0 0 40px;
     text-align: right;
     a {
       margin: 0;
@@ -422,7 +495,51 @@ button:hover, .button:hover {
   width: 250px;
   padding: 0 20px 20px 20px;
   margin: auto;
+  img {
+    border-radius: 50%;
+    height: 210px;
+    width: 210px;
+  }
 }
+
+/**
+* Contact page
+**/
+
+.contact {
+  .contact-info,
+  .contact-form {
+    flex: 1 1 300px;
+  }
+  .contact-form {
+    form {
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        label {
+          flex: 0 0 80px;
+          margin-right: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea, {
+          flex: 1;
+          font-family: inherit;
+          padding: 10px;
+        }
+        input[type="submit"] {
+          justify-self: right;
+        }
+        &.end {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
+
+
 
 /*** Contact Form Styling ***/
 
@@ -502,6 +619,47 @@ p.copy {
   font-size: 12px;
 }
 
+/*** Projects Layout ***/
+.project-content,
+.project-sidebar {
+  margin: 10px;
+}
+.project-content {
+  flex: 1 1 100%;
+}
+.project-sidebar {
+  flex: 1 1 100%;
+  text-align: right;
+  img {
+    width: 100%;
+  }
+  .tags {
+    h6 {
+      font-weight: lighter;
+      text-transform: lowercase;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .project-container {
+    position: relative;
+  }
+  .project-content {
+    flex: 1;
+  }
+  .project-sidebar {
+    flex: 0 0 300px;
+    align-self: flex-start;
+    margin-top: 100px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 /*** 404 Page ***/
 
 h1.four-o-four {
@@ -576,7 +734,7 @@ h1.four-o-four {
     margin-left: 20px;
   }
   .project {
-    margin: 20px 0;
+    margin: 20px 10px;
   }
   .overlay-block {
     // top: 500px;

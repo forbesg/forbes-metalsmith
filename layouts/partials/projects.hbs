@@ -1,18 +1,21 @@
 <div class="projects-block webapps">
   <h2>Web Application Projects</h2>
-  <div class="row">
+  <div class="flexbox wrap negative-margin">
     {{#each collections.webapps}}
-      <div class="col-sm-6">
-        <div class="card row">
-          <header>
-            <h4>{{this.title}}</h4>
-          </header>
-          <figure>
-            <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
-          </figure>
-          <div class="button-container">
-            <a href="/{{this.path}}/" class="button">View Project</a>
-          </div>
+      <div class="card">
+        <figure>
+          <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
+        </figure>
+        <header>
+          <h4>{{this.title}}</h4>
+        </header>
+        <div class="summary">
+          <p>
+            {{this.description}}
+          </p>
+        </div>
+        <div class="button-container">
+          <a href="/{{this.path}}/" class="button">View Project</a>
         </div>
       </div>
     {{/each}}
@@ -21,41 +24,46 @@
 <hr>
 <div class="projects-block web">
   <h2>Website Projects</h2>
-  <div class="row">
+  <div class="flexbox wrap negative-margin">
     {{#each collections.web}}
-    <div class="col-sm-6">
-      <div class="card row">
-        <header>
-          <h4>{{this.title}}</h4>
-        </header>
-
+      <div class="card">
         <figure>
           <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
         </figure>
+        <header>
+          <h4>{{this.title}}</h4>
+        </header>
+        <div class="summary">
+          <p>
+            {{this.description}}
+          </p>
+        </div>
         <div class="button-container">
           <a href="/{{this.path}}/" class="button">View Project</a>
         </div>
       </div>
-    </div>
     {{/each}}
   </div>
 </div>
 <hr>
 <div class="projects-block blackberry">
   <h2>BlackBerry Projects</h2>
-  <div class="row">
+  <div class="flexbox wrap negative-margin">
     {{#each collections.blackberry}}
-      <div class="col-xs-6 col-sm-4">
-        <div class="card row">
-          <header>
-            <h4>{{this.title}}</h4>
-          </header>
-          <figure>
-            <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
-          </figure>
-          <div class="button-container">
-            <a href="/{{this.path}}/" class="button">View Project</a>
-          </div>
+      <div class="card row">
+        <figure>
+          <img src="{{this.image}}" alt="{{this.title}} Screenshot" class="img-responsive" />
+        </figure>
+        <header>
+          <h4>{{this.title}}</h4>
+        </header>
+        <div class="summary">
+          <p>
+            {{this.description}}
+          </p>
+        </div>
+        <div class="button-container">
+          <a href="/{{this.path}}/" class="button">View Project</a>
         </div>
       </div>
     {{/each}}

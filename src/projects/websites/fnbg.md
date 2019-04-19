@@ -4,7 +4,7 @@ description: A static website designed and developed for FNBG Business Cost Cons
 image: /images/projects/web/fnbg.jpg
 url: https://fnbg.co.uk
 layout: project.hbs
-features: [html, css, php, javascript, bootstrap, responsive design, ajax]
+features: [html, css, php, javascript, bootstrap, responsive design, ajax, scss, flexbox, metalsmith, progressive web app]
 ---
 
 This is a website for my Business, <a href="https://fnbg.co.uk" rel="noopener" target="_blank">FNBG Business Cost Consultants</a>, and was what
@@ -24,3 +24,16 @@ Over the last couple of years I have implemented *Twitter Bootstrap*, some *PHP*
 includes for ease of management / maintenance, as well as a little *AJAX* for
 requesting additional content while keeping the initial page size low and
 requesting content from my (shamefully out-of-date) Blogger Site.
+
+The most recent version of the site was written using a static site generator called
+<a href="https://metalsmith.io/" rel="noopener">Metalsmith</a> allowing me to
+create dynamically generated website pages and use build tools such as SCSS,
+whilst getting the speed and security benefits of a static website.
+
+I removed Bootstrap and wrote all the css using flexbox to create a responsive
+layout which reduced the size of the resources required on page load in my
+search for fast load times.
+
+I also took a step onto Progressive Web Apps (PWA) which enabled even faster page load
+times as well as the ability to work offline (probably a little over the top for a
+site like this but good to try out).
