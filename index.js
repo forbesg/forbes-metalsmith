@@ -44,7 +44,7 @@ const buildSW = () => {
     swDest: 'build/service-worker.js',
     globDirectory: 'build',
     globPatterns: [
-      '**\/*.{js,css,html,png}',
+      '**\/*.{js,css,html,svg}',
     ]
   })
 }
