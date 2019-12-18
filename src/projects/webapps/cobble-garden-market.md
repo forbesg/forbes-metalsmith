@@ -6,6 +6,7 @@ image: /images/projects/webapps/cobble-garden-market.jpg
 url: https://www.cobblegardenmarket.co.uk
 layout: project.hbs
 features: [HTML5, SCSS, Vue JS, Nuxt JS, Moltin, Babel, Webpack]
+order: 2
 ---
 
 I was approached by Cobble Garden Market Ltd to develop an e-commerce website for

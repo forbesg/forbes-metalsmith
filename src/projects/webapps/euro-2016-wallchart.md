@@ -7,6 +7,7 @@ url: http://forbesg.github.io/Euro-2016-WallChart
 repo: https://github.com/forbesg/Euro-2016-WallChart
 layout: project.hbs
 features: [HTML5, CSS3, JavaScript, Twitter Bootstrap, Angular JS]
+order: 5
 ---
 
 Continuing with my passion for Wallcharts, and to encorage my nephews to get involved

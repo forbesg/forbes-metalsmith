@@ -364,6 +364,13 @@ button:hover, .button:hover {
   }
   .projects-block {
     margin-bottom: 50px;
+	  @supports (display: grid) {
+			.flexbox {
+				display: grid;
+		    grid-gap: 10px;
+		    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			}
+	  }
   }
 
 
@@ -639,6 +646,16 @@ p.copy {
 }
 .project-content {
   flex: 1 1 100%;
+	> p > img {
+		width: 100%;
+		border: 1px solid #ddd;
+		@media(min-width: 460px) {
+			width: 300px;
+			max-width: 100%;
+			float: left;
+			margin: 10px 20px 10px 0;
+		}
+	}
 }
 .project-sidebar {
   flex: 1 1 100%;

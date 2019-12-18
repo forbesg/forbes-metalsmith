@@ -83,7 +83,8 @@ metalsmith.source('src')
         pattern: 'projects/blackberry/*.html'
       },
       webapps: {
-        pattern: 'projects/webapps/*.html'
+        pattern: 'projects/webapps/*.html',
+        sortBy: 'order'
       }
   }))
   .use(branch('pages/*.html')

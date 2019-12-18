@@ -7,6 +7,7 @@ url: https://my-recipe-manager.firebaseapp.com/
 repo: https://github.com/forbesg/my-recipe-manager
 layout: project.hbs
 features: [HTML5, CSS3, React JS, NodeJS, Firebase]
+order: 4
 ---
 
 My Recipe Manager is a re-written version of my previous MEAN Recipe Manager.

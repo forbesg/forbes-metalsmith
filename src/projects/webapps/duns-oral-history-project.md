@@ -7,6 +7,7 @@ url: https://dunsoralhistoryproject.co.uk
 # repo:
 layout: project.hbs
 features: [HTML5, SCSS, Vue JS, Nuxt JS, Firebase, Babel, Webpack, PWA]
+order: 3
 ---
 
 The Duns Oral History web application was written in order to manage and present audio recordings

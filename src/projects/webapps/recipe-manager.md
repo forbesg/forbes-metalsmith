@@ -6,6 +6,7 @@ image: /images/projects/webapps/recipe-manager.jpg
 url: http://recipemanager-fnbg.rhcloud.com/
 layout: project.hbs
 features: [HTML5, CSS3, MEAN Stack, Angular JS, NodeJS, ExpressJS, MongoDB]
+order: 6
 ---
 
 The Recipe Manager Application is built entirely in JavaScript using the MEAN Stack and allows users to

@@ -7,6 +7,7 @@ url: http://forbesg.github.io/uk-telephone-codes
 repo: https://github.com/forbesg/uk-telephone-codes
 layout: project.hbs
 features: [HTML5, CSS3, JavaScript, Bootstrap, AJAX]
+order: 8
 ---
 
 The UK Telephone Codes App was a simple project to play around with the XMLHttpRequest.
