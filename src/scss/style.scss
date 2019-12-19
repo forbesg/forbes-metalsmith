@@ -648,9 +648,8 @@ p.copy {
   flex: 1 1 100%;
 	> p > img {
 		width: 100%;
-		border: 1px solid #ddd;
 		@media(min-width: 460px) {
-			width: 300px;
+			width: 240px;
 			max-width: 100%;
 			float: left;
 			margin: 10px 20px 10px 0;

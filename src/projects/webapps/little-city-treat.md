@@ -11,7 +11,7 @@ order: 1
 
 #### Booking System for Edinburgh Mobile Beauty Therapists
 
-I was required to create a bespoke booking system for a provider of mobile beauty
+I was asked to create a bespoke booking system for a provider of mobile beauty
 treatments in Edinburgh. The company allows self-employed Beauty Professionals
 to set their own availability and populate the booking system based upon those therapists.
 
@@ -24,7 +24,7 @@ There are a lot of third party booking systems available however all of them wer
 little too rigid for our requirements and tend to feel as though they have been
 shoehorned into a site.
 
-![Mobile Booking Application](/images/projects/webapps/booking-mobile.jpg)
+![Mobile Booking Application](/images/projects/webapps/booking-mobile.png)
 
 It was important that the booking process be easy to use, fast and secure. After
 much consultation the process was finalised allowing customers to select their desired
