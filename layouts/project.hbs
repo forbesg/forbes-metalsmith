@@ -19,6 +19,9 @@
         <h2>{{title}}</h2>
       </div>
       {{{ contents }}}
+      {{#if fullImage}}
+      <img src="{{fullImage.src}}" alt="{{fullImage.alt}}" class="full-width-image" />
+      {{/if}}
     </div>
     <div class="project-sidebar">
       <img src="{{image}}" alt="{{title}} Screenshot" class="img-responsive" />
