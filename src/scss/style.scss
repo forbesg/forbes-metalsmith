@@ -646,6 +646,7 @@ p.copy {
 }
 .project-content {
   flex: 1 1 100%;
+	margin-bottom: 100px;
 	> p > img {
 		width: 100%;
 		@media(min-width: 460px) {
