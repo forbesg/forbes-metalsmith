@@ -503,10 +503,13 @@ button:hover, .button:hover {
   }
 
   figure {
-    // margin: 0 -10px;
+		height: 0;
+		width: 100%;
+		padding-bottom: 56%;
+		overflow: hidden;
     img {
       width: 100%;
-      // border: 1px solid #EEE;
+			object-fit: contain;
     }
   }
 
