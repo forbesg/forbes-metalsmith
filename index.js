@@ -85,6 +85,12 @@ metalsmith.source('src')
       webapps: {
         pattern: 'projects/webapps/*.html',
         sortBy: 'order'
+      },
+      featured: {
+        pattern: 'projects/**/*.html',
+        filterBy: (file) => {
+          return file.featured
+        }
       }
   }))
   .use(branch('pages/*.html')

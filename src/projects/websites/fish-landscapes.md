@@ -1,6 +1,7 @@
 ---
 title: Fish Landscapes
 description: A Nuxt JS generated static website for Fish Landscapes, a landscaping contractor in the South Lakes, Cumbria.
+subhead: A Fast Static Business Website
 image: /images/projects/web/FishLandscapes.jpg
 url: https://www.fishlandscapes.co.uk
 layout: project.hbs
@@ -8,6 +9,7 @@ features: [html, css, javascript, vue, nuxt js, flexbox, css grid, responsive de
 fullImage:
   src: /images/projects/web/fish-landscapes-pagespeed-test.jpg
   alt: Fish Landscapes Website pagespeed test results
+featured: true
 ---
 
 Fish Landscapes is a landscaping design and construction company in Cumbria. They

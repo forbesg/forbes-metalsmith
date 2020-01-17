@@ -5,6 +5,7 @@ image: /images/projects/web/BeautyEdinburgh.jpg
 url: http://www.beautyedinburgh.co.uk
 layout: project.hbs
 features: [html, css, php, javascript, bootstrap, online booking, responsive design]
+featured: false
 ---
 
 The Beauty Edinburgh Website is a something that has evolved over time.

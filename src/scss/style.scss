@@ -84,7 +84,7 @@ button, .button {
   cursor: pointer;
   display: inline-block;
   margin: 20px 0;
-  padding: 5px 10px;
+  padding: 10px 20px;
   transition: all 0.3s ease-in;
   svg {
     height: 15px;
@@ -390,6 +390,7 @@ button:hover, .button:hover {
 			.project-container {
 				position: relative;
 				.image-block {
+					box-shadow: 0 0 30px rgba(0,0,0,0.2);
 					img {
 			      max-width: 100%;
 			    }
@@ -404,6 +405,11 @@ button:hover, .button:hover {
 		      display: block;
 		      overflow: hidden;
 		      transition: opacity 0.5s cubic-bezier(0.55,-0.12, 0.5, 1.08);
+					h5 {
+						font-weight: normal;
+						opacity: 0;
+						transition: opacity .5s .5s;
+					}
 		      &.show {
 		        height: 100%;
 		        opacity: 1;
@@ -411,6 +417,9 @@ button:hover, .button:hover {
 		          h4 {
 		            animation: 0.5s dropIn cubic-bezier(0.55,-0.12, 0.5, 1.08);
 		          }
+							h5 {
+								opacity: 1;
+							}
 		          a {
 		            animation: 0.5s fadeInUp cubic-bezier(0.55,-0.12, 0.5, 1.08);
 		          }
@@ -472,14 +481,14 @@ button:hover, .button:hover {
 
 
 .card {
-  // box-shadow: 0 0 1px #485563;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,.05);
   margin: 10px 10px 30px 10px;
-  // min-height: 460px;
-  padding: 0 10px 10px 10px;
+  padding: 20px;
   flex: 1 1 300px;
-  // max-width: 330px;
   display: flex;
   flex-direction: column;
+	transition: box-shadow .5s;
   header {
     flex: 0;
     margin: 0 -10px;
@@ -494,7 +503,7 @@ button:hover, .button:hover {
   }
 
   figure {
-    margin: 0;
+    // margin: 0 -10px;
     img {
       width: 100%;
       // border: 1px solid #EEE;
@@ -508,6 +517,9 @@ button:hover, .button:hover {
       margin: 0;
     }
   }
+	&:hover {
+		box-shadow: 0 0 30px rgba(0,0,0,.1);
+	}
 }
 
 .google-card {

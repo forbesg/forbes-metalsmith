@@ -7,6 +7,7 @@ url: https://www.littlecitytreat.com
 layout: project.hbs
 features: [HTML5, SCSS, Vue JS, Nuxt JS, Firebase, Babel, Webpack, Progressive Web App]
 order: 1
+featured: true
 ---
 
 #### Booking System for Edinburgh Mobile Beauty Therapists
