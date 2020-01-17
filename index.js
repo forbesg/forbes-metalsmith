@@ -98,11 +98,24 @@ metalsmith.source('src')
       pattern: ":title"
     }))
   )
-  .use(branch('projects/**/*.html')
+  .use(branch('projects/websites/*.html')
     .use(permalinks({
-      pattern: "portfolio/:collection/:title"
+      pattern: "portfolio/web/:title"
     }))
   )
+  .use(branch('projects/blackberry/*.html')
+    .use(permalinks({
+      pattern: "portfolio/blackberry/:title"
+    }))
+  )
+  .use(branch('projects/webapps/*.html')
+    .use(permalinks({
+      pattern: "portfolio/webapps/:title"
+    }))
+  )
+  .use(() => {
+    console.log(metalsmith._metadata.collections.featured);
+  })
   .use(layouts({
     engine: 'handlebars',
   }))
