@@ -113,9 +113,6 @@ metalsmith.source('src')
       pattern: "portfolio/webapps/:title"
     }))
   )
-  .use(() => {
-    console.log(metalsmith._metadata.collections.featured);
-  })
   .use(layouts({
     engine: 'handlebars',
   }))
