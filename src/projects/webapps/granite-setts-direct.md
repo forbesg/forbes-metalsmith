@@ -1,16 +1,16 @@
 ---
-title: Cobble Garden Market
-description: An E-Commerce web application designed and developed for Cobble Garden Market Ltd using a headless e-commerce API
+title: Granite Setts Direct
+description: An E-Commerce web application designed and developed for Granite Setts Direct Ltd using a headless e-commerce API
 subhead: E-Commerce Web Application
-image: /images/projects/webapps/cobble-garden-market.jpg
-url: https://www.cobblegardenmarket.co.uk
+image: /images/projects/webapps/granite-setts-direct.jpg
+url: https://www.granitesettsdirect.co.uk
 layout: project.hbs
 features: [HTML5, SCSS, Vue JS, Nuxt JS, Moltin, Babel, Webpack]
 order: 2
 featured: true
 ---
 
-I was approached by Cobble Garden Market Ltd to develop an e-commerce website for
+I was approached by Granite Setts Direct Ltd to develop an e-commerce website for
 them to sell granite setts online in the UK.
 
 On review of their competitors websites, we felt that there was a real opportunity
