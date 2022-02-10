@@ -28,7 +28,7 @@
     "metalsmith-sitemap": "^1.2.2",
     "metalsmith-uglify": "^2.3.2",
     "metalsmith-watch": "^1.0.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "workbox-build": "^4.3.0"
   },
   "dependencies": {}
